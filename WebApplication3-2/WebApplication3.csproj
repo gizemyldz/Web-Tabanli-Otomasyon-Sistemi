@@ -1,0 +1,292 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D59013BE-2A58-45BC-A02C-F06D9947141D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication3</RootNamespace>
+    <AssemblyName>WebApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BolumEkleme.aspx" />
+    <Content Include="BolumListele.aspx" />
+    <Content Include="DersAtama.aspx" />
+    <Content Include="DersAtamalariListele.aspx" />
+    <Content Include="DersEkleme.aspx" />
+    <Content Include="DersListele.aspx" />
+    <Content Include="DonemEkleme.aspx" />
+    <Content Include="KazanimBazliDegerlendirme.aspx" />
+    <Content Include="KazanimBazliListeleme.aspx" />
+    <Content Include="KullaniciListele.aspx" />
+    <Content Include="KullaniciLogin.aspx" />
+    <Content Include="KullaniciProfil.aspx" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="SignUpPage.aspx" />
+    <Content Include="SinavBazliListeleme.aspx" />
+    <Content Include="SoruBazliListeleme.aspx" />
+    <Content Include="SoruBazliOkuma.aspx" />
+    <Content Include="TestSınavOkuma.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BolumEkleme.aspx.cs">
+      <DependentUpon>BolumEkleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BolumEkleme.aspx.designer.cs">
+      <DependentUpon>BolumEkleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BolumListele.aspx.cs">
+      <DependentUpon>BolumListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BolumListele.aspx.designer.cs">
+      <DependentUpon>BolumListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersAtama.aspx.cs">
+      <DependentUpon>DersAtama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersAtama.aspx.designer.cs">
+      <DependentUpon>DersAtama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersAtamalariListele.aspx.cs">
+      <DependentUpon>DersAtamalariListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersAtamalariListele.aspx.designer.cs">
+      <DependentUpon>DersAtamalariListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersEkleme.aspx.cs">
+      <DependentUpon>DersEkleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersEkleme.aspx.designer.cs">
+      <DependentUpon>DersEkleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersListele.aspx.cs">
+      <DependentUpon>DersListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersListele.aspx.designer.cs">
+      <DependentUpon>DersListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonemEkleme.aspx.cs">
+      <DependentUpon>DonemEkleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonemEkleme.aspx.designer.cs">
+      <DependentUpon>DonemEkleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KazanimBazliDegerlendirme.aspx.cs">
+      <DependentUpon>KazanimBazliDegerlendirme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KazanimBazliDegerlendirme.aspx.designer.cs">
+      <DependentUpon>KazanimBazliDegerlendirme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KazanimBazliListeleme.aspx.cs">
+      <DependentUpon>KazanimBazliListeleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KazanimBazliListeleme.aspx.designer.cs">
+      <DependentUpon>KazanimBazliListeleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.Master.cs">
+      <DependentUpon>Kullanici.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kullanici.Master.designer.cs">
+      <DependentUpon>Kullanici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciListele.aspx.cs">
+      <DependentUpon>KullaniciListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciListele.aspx.designer.cs">
+      <DependentUpon>KullaniciListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciLogin.aspx.cs">
+      <DependentUpon>KullaniciLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciLogin.aspx.designer.cs">
+      <DependentUpon>KullaniciLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciProfil.aspx.cs">
+      <DependentUpon>KullaniciProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciProfil.aspx.designer.cs">
+      <DependentUpon>KullaniciProfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpPage.aspx.cs">
+      <DependentUpon>SignUpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUpPage.aspx.designer.cs">
+      <DependentUpon>SignUpPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SinavBazliListeleme.aspx.cs">
+      <DependentUpon>SinavBazliListeleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinavBazliListeleme.aspx.designer.cs">
+      <DependentUpon>SinavBazliListeleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SoruBazliListeleme.aspx.cs">
+      <DependentUpon>SoruBazliListeleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoruBazliListeleme.aspx.designer.cs">
+      <DependentUpon>SoruBazliListeleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SoruBazliOkuma.aspx.cs">
+      <DependentUpon>SoruBazliOkuma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoruBazliOkuma.aspx.designer.cs">
+      <DependentUpon>SoruBazliOkuma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestSınavOkuma.aspx.cs">
+      <DependentUpon>TestSınavOkuma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestSınavOkuma.aspx.designer.cs">
+      <DependentUpon>TestSınavOkuma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kullanici.Master" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61265</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61265/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

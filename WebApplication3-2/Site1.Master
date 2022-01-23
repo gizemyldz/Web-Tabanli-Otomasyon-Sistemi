@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<style>
+        #pnlbaslik{
+            color:white;
+            font-size:20px;
+            padding-top:30px;
+            font-family:cursive;
+            text-align:center
+
+      
+        }
+        .card-header:hover{
+            background-color:white;
+        }
+        #row1:hover{
+            background-color:#414141;
+           
+        }
+      
+    </style>
+
+</head>
+<body style="margin-top:0px;margin-left:0px">
+    
+    
+        <div style="margin-left:260px;position:absolute; top: 90px; left: 8px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <div class="card bg-secondary" style="position:absolute; top: 1px; left: 262px; height: 78px; width: 1086px ;background-color:#ffffcc;border:2px solid #800000">
+         <div class="card-body">
+              <img src="user_icon.png" class="rounded-circle" style="position:absolute; top: 5px; left: 1013px;">
+              <div class="dropdown" style="position:absolute; top: 21px; left: 808px;">
+             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="text-align:left ;background-color:#ffffe6">
+              Kullanıcı Adı - Soyadı</button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="KullaniciProfil.aspx">Profilim</a>
+                  <a class="dropdown-item" href="#">Profili Düzenle</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Çıkış Yap </a>
+                </div>
+              </div>
+         </div>
+         </div>
+           <div style="width: 260px; height: 750px; background-color:#800000; margin-top:0px;margin-left:0px;">
+               <div id="pnlbaslik"><b>ADMİN PANELİ</b></div>
+               <div id="accordion" style="margin-right:5px;margin-left:5px;margin-top:15px" >
+                   <div class="card ">
+                       <div class="card-header " style="background-color:#800000;color:white">
+                           <i class="fas fa-user"></i> <a href="#collapseOne" class="card-link" data-toggle="collapse" style="padding-left:10px;color:white">Kullanıcı Ekleme</a>
+                       </div>
+                       <div id="collapseOne" class="collapse" data-parent="#accordion" style="background-color:black">
+                           <div>
+                                <table class="table table-hover table-borderless" >
+                                <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="WebForm1.aspx"  style="color:#ff3e4b;padding-left:10px;margin-top:10px">Ekleme İşlemi</a>
+                                    </td>
+                                </tr></table>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card" >
+                       <div class="card-header" style="background-color:#800000;color:white">
+                           <i class="fas fa-university"></i><a href="#collapseTwo" class="card-link" data-toggle="collapse" style="padding-left:15px;color:white">Bölüm Ekleme</a>
+                       </div>
+                       <div id="collapseTwo" class="collapse" data-parent="#accordion" style="background-color:black">
+                           <div >
+                                <table class="table table-hover table-borderless" >
+                                <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="BolumEkleme.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Ekleme İşlemi</a>
+                                    </td>
+                                </tr></table>
+                           </div>
+                       </div>
+                   </div>
+                    <div class="card">
+                       <div class="card-header" style="background-color:#800000;color:white">
+                         <i class="	fas fa-calendar-alt"></i><a href="#collapseThree" class="card-link" data-toggle="collapse" style="padding-left:15px;color:white">Dönem Ekleme</a>
+                       </div>
+                       <div id="collapseThree" class="collapse" data-parent="#accordion" style="background-color:black">
+                            <div >
+                                <table class="table table-hover table-borderless" >
+                                <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="DonemEkleme.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Ekleme İşlemi</a>
+                                    </td>
+                                </tr></table>
+                           </div>
+                       </div>
+
+                   </div>
+ 
+                   <div class="card">
+                       <div class="card-header" style="background-color:#800000;color:white">
+                          <i class="fas fa-book"></i> <a href="#collapseFour" class="card-link" data-toggle="collapse" style="padding-left:15px;color:white">Ders Ekleme</a>
+                       </div>
+                       <div id="collapseFour" class="collapse" data-parent="#accordion" style="background-color:black">
+                            <div >
+                                <table class="table table-hover table-borderless" >
+                                <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="DersEkleme.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Ekleme İşlemi</a>
+                                    </td>
+                                </tr></table>
+                           </div>
+                       </div>
+
+                   </div>
+                    <div class="card">
+                       <div class="card-header" style="background-color:#800000;color:white">
+                          <i class="fas fa-chalkboard-teacher"></i>  <a href="#collapseFive" class="card-link" data-toggle="collapse" style="padding-left:15px;color:white">Ders Atama İşlemi</a>
+                       </div>
+                       <div id="collapseFive" class="collapse" data-parent="#accordion" style="background-color:black">
+                            <div >
+                                <table class="table table-hover table-borderless" >
+                                <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="DersAtama.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Ekleme İşlemi</a>
+                                    </td>
+                                </tr></table>
+                           </div>
+                       </div>
+
+                   </div>
+                   <div class="card">
+                       <div class="card-header" style="background-color:#800000;color:white">
+                         <i class="fas fa-th-list"></i>  <a href="#collapseSix" class="card-link" data-toggle="collapse" style="padding-left:15px; color:white"> Listeleme İşlemi</a>
+                       </div>
+                       <div id="collapseSix" class="collapse show" data-parent="#accordion" style="background-color:black">
+                            <div >
+                                <table class="table table-hover table-borderless" >
+                                <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="KullaniciListele.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Kullancıları Listele</a>
+                                    </td>
+                                </tr>
+                                 <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="BolumListele.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Bölümleri Listele</a>
+                                    </td>
+                                </tr>
+                                     <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="DersAtamalariListele.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Ders Atamalarını Listele</a>
+                                    </td>
+                                </tr>
+                                     <tr >
+                                    <td>
+                                        <i class="fas fa-plus-circle" style="color:white;margin-left:10px;margin-top:10px"></i> <a href="DersListele.aspx" style="color:#ff3e4b;padding-left:10px;margin-top:10px">Dersleri Listele</a>
+                                    </td>
+                                </tr>
+                                </table>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+            </div>
+        
+    
+</body>
+</html>

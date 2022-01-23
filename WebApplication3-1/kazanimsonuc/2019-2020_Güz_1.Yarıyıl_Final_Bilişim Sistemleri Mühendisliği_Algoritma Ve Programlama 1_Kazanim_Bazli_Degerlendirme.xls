@@ -1,0 +1,13 @@
+<div>
+	<table cellspacing="0" rules="all" id="ContentPlaceHolder1_sonucgrid" style="border-width:1px;border-style:Solid;border-collapse:collapse;">
+		<tr>
+			<th scope="col">Kazanım</th><th scope="col">Ortalaması</th><th scope="col">Başarımı(%)</th>
+		</tr><tr>
+			<td>K1</td><td>0,22</td><td>6,67</td>
+		</tr><tr>
+			<td>K2</td><td>0,33</td><td>10</td>
+		</tr><tr>
+			<td>K3</td><td>0,11</td><td>3,33</td>
+		</tr>
+	</table>
+</div>

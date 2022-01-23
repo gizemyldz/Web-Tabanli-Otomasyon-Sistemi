@@ -1,0 +1,12 @@
+Ad;Soyad;Numara;Grup;Cevaplar
+EBRU        ;YILMAZ      ;120111065;B;AABEAAAAE ABBEBBEBCBDDBDEDEACC;                                                                      
+DİDEM       ;DİK         ;090112006;C;CBADAACA CDACA BEAACEBC BACA A;                                                                      
+ELZEM       ;AKSU        ;130111047;B;AABCAABBEBBDBEBDCBCCDBBBCECAAC;                                                                      
+ELİF        ;ERGÜN       ;120111024;A;DCBC  BCCCBB C EBAAAACCCA BBAB;                                                                      
+DUYGU       ;YENERSU     ;120111097;C;EBBDAAAAACBACDDBEABCEBCCDEEAAC;
+ZEYNEP      ;ASLAN       ;         ;B;D B A BA AAEBEBDCDC DCABAA    ;
+REMZİYE     ;ŞEN         ;11011 0  ;A;DABAEBAD CBDBCAA AACACACADBBAA;
+        UĞUR;        USTA;100112074;A;DCBBEEBC DBCBDBCB A AE  ADBBAA;
+KAYRA       ;YENERSU     ;120141097; ;EBBDAAAAACBACDDBEABCEBCCDEEAAC;
+       GİZEM;       ÖZMEN;120111050;A;DCBDBABCCCBBBC CBAAAACACADBAAB;
+            ;ELMASTAŞ    ;120111035;B;ADAEBABAEBDBBEBDEBECEBBBCAEAAC;  
